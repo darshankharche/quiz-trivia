@@ -20,22 +20,24 @@ import React from 'react';
     }
     // console.log(selectedOption)
     React.useEffect(()=>{
-        console.log("running")
-        setOptions(()=>{
-            const newOptions = [data.correct_answer,...data.incorrect_answers]
-            for(let i=0;i<newOptions.length;i++){
-                let j = Math.floor(Math.random() * newOptions.length)
-        
-                let temp = newOptions[i]
-                newOptions[i] = newOptions[j]
-                newOptions[j] = temp
-            }
-            return newOptions
-        }
+            console.log("running")
+            setOptions(()=>{
+                const newOptions = [data.correct_answer,...data.incorrect_answers]
+                for(let i=0;i<newOptions.length;i++){
+                    let j = Math.floor(Math.random() * newOptions.length)
             
-        )
+                    let temp = newOptions[i]
+                    newOptions[i] = newOptions[j]
+                    newOptions[j] = temp
+                }
+                return newOptions
+            }
+                
+            )
         
-    },[])
+        
+        
+    },[data])
 
     const optionsArray = options.map((per,index)=> {
         return <h4 className={`options${num}`} id={`options${num}-${index}`} onClick={()=>storeOption(per,index)} key={index}>{per}</h4>
