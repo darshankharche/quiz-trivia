@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+}
+
+
+.App{
+  background-color: rgb(88, 43, 0);
+}
+
+/* .main-page{
+  width: 400px;
+  margin: 0 auto;
+} */
+
+.App-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-page{
+  text-align: center;
+}
+
+.main-page h1{
+  font-size: 4rem;
+  padding-bottom: .5em;
+}
+
+.main-page p{
+  font-size: 1.5rem;
+  padding-bottom: 2em;
+}
+
+button{
+  color: white;
+  border: none;
+  font-size: 1.3em;
+  padding: .75em 2.25em;
+  border-radius: 10px;
+  background-color: rgb(35, 35, 189);
+}
+
+ button:hover{
+  background-color: rgb(8, 11, 168);
+}
+
+.card{
+  max-width: 800px;
+  margin: 1em;
+  padding: 1em;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.options{
+  margin-top: 1em;
+  display: flex;
+}
+
+.options h4{
+  margin-right: 1em;
+  padding: .25em 1em;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.quiz{
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz button{
+  align-self: center;
+  font-size: 1.3rem;
+  padding: .5em 1.5em;
+  margin: 2em;
+}
+
+.green{
+  background-color: green;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.red{
+  background-color: red;
+}
